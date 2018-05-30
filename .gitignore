@@ -1,0 +1,13 @@
+*/**/.suo
+*/**/bin
+*/**/obj
+*.suo
+*/bin
+*/obj
+/packages
+/.figs
+*/**/*.user
+/.vs
+/.dbmdl
+/Trackmatic.Api.Agent.FamousBrands/Adding VPN settings for users not on domain.docx
+/Trackmatic.Api.Agent.Sql/Trackmatic.Api.Agent.Sql.dbmdl
