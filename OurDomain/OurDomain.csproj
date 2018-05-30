@@ -44,12 +44,6 @@
     <Compile Include="Model\MyObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DomainFramework\DomainFramework.csproj">
-      <Project>{3da33478-9758-4d0e-aa2f-a9ed6db660ba}</Project>
-      <Name>DomainFramework</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

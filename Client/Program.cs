@@ -26,7 +26,7 @@ namespace Client
                 .Transactions(TransportTransactionMode.ReceiveOnly)
                 .Routing();
 
-            routing.RouteToEndpoint(typeof(CreateMyObjectCommand).Assembly, "test-server");
+            routing.RouteToEndpoint(typeof(DoSomethingCommand).Assembly, "test-server");
 
             var outbox = configuration.EnableOutbox();
             outbox.TimeToKeepDeduplicationData(TimeSpan.FromDays(2));
@@ -56,7 +56,7 @@ namespace Client
             while (true)
             {
                 Console.ReadLine();
-                endpoint.Send(new CreateMyObjectCommand { Name = "A new object"}).Wait();
+                endpoint.Send(new DoSomethingCommand()).Wait();
             }
 
         }
